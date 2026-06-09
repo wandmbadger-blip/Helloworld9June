@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 class HelloWorld
 {
@@ -9,6 +10,10 @@ class HelloWorld
         // Print a random prime number greater than 10000
         int randomPrime = GetRandomPrimeGreaterThan10000();
         Console.WriteLine($"Random prime number: {randomPrime}");
+        
+        // Print a random 7-letter word
+        string randomWord = GetRandom7LetterWord();
+        Console.WriteLine($"Random word: {randomWord}");
     }
     
     static int GetRandomPrimeGreaterThan10000()
@@ -47,5 +52,35 @@ class HelloWorld
         }
         
         return true;
+    }
+    
+    static string GetRandom7LetterWord()
+    {
+        List<string> words = new List<string>
+        {
+            "Badgers",
+            "Console",
+            "Numbers",
+            "Program",
+            "Compile",
+            "Testing",
+            "Happens",
+            "Quality",
+            "Respect",
+            "Amazing",
+            "Perfect",
+            "Welcome",
+            "Crystal",
+            "Thunder",
+            "Sunrise",
+            "History",
+            "Journey",
+            "Kingdom",
+            "Liberty",
+            "Machine"
+        };
+        
+        Random random = new Random();
+        return words[random.Next(words.Count)];
     }
 }
