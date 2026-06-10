@@ -7,14 +7,25 @@ class HelloWorld
     {
         Console.WriteLine("Hi Badger");
         
-        // Print a random prime number greater than 10000
-        int randomPrime = GetRandomPrimeGreaterThan10000();
-        Console.WriteLine($"Random prime number: {randomPrime}");
+        string continueChoice = "go again";
         
-        // Print a random 7-letter word
-        string randomWord = GetRandom7LetterWord();
-        Console.WriteLine($"Random word: {randomWord}");
-        Console.WriteLine("ok there is a new word");
+        while (continueChoice.ToLower() != "exit")
+        {
+            // Print a random prime number greater than 10000
+            int randomPrime = GetRandomPrimeGreaterThan10000();
+            Console.WriteLine($"Random prime number: {randomPrime}");
+            
+            // Print a random 7-letter word
+            string randomWord = GetRandom7LetterWord();
+            Console.WriteLine($"Random word: {randomWord}");
+            
+            // Ask user to continue or exit
+            Console.WriteLine("\nWould you like to 'go again' or 'exit'?");
+            continueChoice = Console.ReadLine();
+            Console.WriteLine();
+        }
+        
+        Console.WriteLine("Thank you for using the program!");
     }
     
     static int GetRandomPrimeGreaterThan10000()
