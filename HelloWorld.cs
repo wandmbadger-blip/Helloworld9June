@@ -14,6 +14,7 @@ class HelloWorld
         // Print a random 7-letter word
         string randomWord = GetRandom7LetterWord();
         Console.WriteLine($"Random word: {randomWord}");
+        Console.WriteLine("ok there is a new word");
     }
     
     static int GetRandomPrimeGreaterThan10000()
