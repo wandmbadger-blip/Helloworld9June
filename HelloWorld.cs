@@ -15,6 +15,10 @@ class HelloWorld
             int randomPrime = GetRandomPrimeGreaterThan10000();
             Console.WriteLine($"Random prime number: {randomPrime}");
             
+            // Calculate and print the square root
+            double squareRoot = Math.Sqrt(randomPrime);
+            Console.WriteLine($"Here is its square root: {squareRoot:F2}");
+            
             // Print a random 7-letter word
             string randomWord = GetRandom7LetterWord();
             Console.WriteLine($"Random word: {randomWord}");
