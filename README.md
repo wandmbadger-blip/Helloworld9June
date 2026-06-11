@@ -1,6 +1,9 @@
-# Helloworld9June
+# Helloworld9Junev2
 
 A simple C# interactive console application that generates random prime numbers and 7-letter words, with square root calculations.
+
+## Language
+- **C#** (100%)
 
 ## Features
 
