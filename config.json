@@ -1,0 +1,12 @@
+{
+  "anthropic": {
+    "authToken": "your_token_here",
+    "apiKey": "your_api_key_here",
+    "baseUrl": "http://127.0.0.1:3456"
+  },
+  "app": {
+    "name": "Helloworld9Junev2",
+    "description": "Hello world",
+    "language": "C#"
+  }
+}
